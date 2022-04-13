@@ -1,0 +1,20 @@
+componentConfig: true
+domain: example.com
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: app
+repo: github.com/jdlfounder/app
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: example.com
+  group: app
+  kind: App
+  path: github.com/jdlfounder/app/api/v1
+  version: v1
+version: "3"
