@@ -1,0 +1,2 @@
+# app
+operator-sdk test
